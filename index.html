@@ -30,26 +30,27 @@
 					</ul>
 				</nav>-->
 				
-				<nav> 
-
-				  <ul> 
-					<li><a href="/" class="active">Home</a></li> 
-					<li><a href="/collections/all">Books</a></li> 
-					<li><a href="/blogs/five-simple-steps-blog">Blog</a></li> 
-					<li><a href="/pages/about-us">About Us</a></li> 
-					<li><a href="/pages/support">Support</a></li> 
-				  </ul> 
-				  
-				  <select> 
-					<option value="" selected="selected">Select</option> 
-					
-					<option value="/">Home</option> 
-					<option value="/collections/all">Books</option> 
-					<option value="/blogs/five-simple-steps-blog">Blog</option> 
-					<option value="/pages/about-us">About Us</option> 
-					<option value="/pages/support">Support</option> 
-				  </select> 
-
+				<nav class="navbar navbar-default navbar-inverse" role="navigation">
+				   <div class="container-fluid" id="navfluid">
+					   <div class="navbar-header">
+						   <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigationbar">
+							   <span class="sr-only">Toggle navigation</span>
+							   <span class="icon-bar"></span>
+							   <span class="icon-bar"></span>
+							   <span class="icon-bar"></span>
+							</button>
+							<a class="navbar-brand" href="./Index.html">Stadtfestlauf</a>
+					   </div>
+					   <div class="collapse navbar-collapse" id="navigationbar">
+						   <ul class="nav navbar-nav">
+							   <li class="active"><a href="./Index.html">Startseite</a></li>
+							   <li><a href="./Rueckblick.html">R&uuml;ckblick</a></li>
+							   <li><a href="./Wettbewerb.html">Wettbewerb</a></li>    
+							   <li><a href="./anmelden.html">Anmelden</a></li>
+							   <li><a href="./sponsoren.html">Sponsoren</a></li>
+						   </ul>
+					  </div><!-- /.navbar-collapse -->
+				   </div><!-- /.container-fluid -->
 				</nav>
 					
 
@@ -124,30 +125,6 @@
 	<script src="js/cells-by-row.js"></script>
 	<script type="text/javascript" src="js/fancybox/jquery.fancybox.pack.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
-	<script>
-	// Create the dropdown base
-	$("<select />").appendTo("nav");
-
-	// Create default option "Go to..."
-	$("<option />", {
-	   "selected": "selected",
-	   "value"   : "",
-	   "text"    : "Go to..."
-	}).appendTo("nav select");
-
-	// Populate dropdown with menu items
-	$("nav a").each(function() {
-	 var el = $(this);
-	 $("<option />", {
-		 "value"   : el.attr("href"),
-		 "text"    : el.text()
-	 }).appendTo("nav select");
-	});
-	
-	$("nav select").change(function() {
-	  window.location = $(this).find("option:selected").val();
-	});
-	</script>
 
 </body>
 </html>
