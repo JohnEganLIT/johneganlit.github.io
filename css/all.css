@@ -1,3 +1,7 @@
+@media (max-width: 960px) {
+  nav ul     { display: none; }
+  nav select { display: inline-block; }
+}
 @font-face {
     font-family: 'novecentosanswide';
     src: url('../fonts/novecentosanswide-normal-webfont.eot');
@@ -171,6 +175,10 @@ a:hover{text-decoration:underline;}
 	margin: 0 auto 22px;
 	padding: 0 0 0 10px;
 }
+nav select {
+  display: none;
+}
+
 #nav ul {
 	text-align: center;
 }
