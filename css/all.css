@@ -165,7 +165,7 @@ a:hover{text-decoration:underline;}
 	text-transform: uppercase;
 	margin: 85px 0 23px;
 }
-#navbar-brand {
+#nav {
 	position: relative;
 	display: table;
 	margin: 0 auto 22px;
