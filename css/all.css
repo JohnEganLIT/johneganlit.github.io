@@ -290,6 +290,7 @@ h2.slogan{
 	text-align: center;
 	margin: 0 0 10px;
 }
+
 /*skills*/
 #main .skills_holder h2{text-align: left;margin: 0 0 40px;}
 .skills_holder{
@@ -297,6 +298,7 @@ h2.slogan{
 	overflow: hidden;
 	margin: 0 0 40px;
 }
+
 .skills_holder .column {
 	width: 470px;
 	float: left;
@@ -570,7 +572,7 @@ transition: all 0.5s ease-in-out;
 	position: relative;
 }
 .footer-content .social li.email a{background: url(../images/icon_email.png) no-repeat 50% 50% ;}
-.footer-content .social li.facebook a{background: url(../images/icon_fb.png) no-repeat 50% 50%;}
+.footer-content .social li.facebook a{background: url(../images/icon-gh.png) no-repeat 50% 50%;}
 .footer-content .social li.google a{background: url(../images/icon_gl.png) no-repeat 50% 50% ;}
 .footer-content .social li.twitter a{background: url(../images/icon_tw.png) no-repeat 50% 50% ;}
 .footer-content .social li.pinterest a{background: url(../images/icon_pn.png) no-repeat 50% 50%;}
